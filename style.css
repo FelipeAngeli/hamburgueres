@@ -1,0 +1,61 @@
+/*
+font-family: 'Prompt', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+body{
+ background-color: black;
+ background-image: url(imagens/textura.png);
+ background-repeat: no-repeat;
+ background-size: 100%;
+ font-family: 'Roboto', sans-serif; 
+ width: 1200px;
+ margin: 0 auto;
+}
+
+
+
+/* posicionamento do menu*/
+header{
+    padding: 20px 0;
+    height: 45px;
+}
+
+.caixa-header{
+    position: relative;
+
+}
+
+nav{
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin-left: 20px;
+   
+}
+
+nav a{
+    text-decoration: none;
+    color: #CF7500;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.2s;
+    transition-property: transform;
+    
+}
+
+nav a:focus,
+nav a:hover,
+nav a:active {
+    transform: scale(1.2);
+    text-decoration:underline overline;   
+}
+
