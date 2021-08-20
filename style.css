@@ -137,13 +137,14 @@ nav a:active {
 .pint-baner{
     justify-content: flex-start;
     margin:0  100px;
+    height: 450px ;
 
 }
 
 .texto-bebida{
     justify-content: flex-end;
     text-align: right;
-    margin: 120px 30px 0px 100px;
+    margin: 60px 30px 0px 100px;
 }
 
 .texto-bebida h3, .texto-acompanhamento h3{
@@ -168,10 +169,13 @@ nav a:active {
 
 .fritas-banner{
     justify-content: flex-end ;
+    height: 600px;
 }
 
 
 /*foother*/
+
+
 
 footer h2{
     text-align: center;
@@ -180,12 +184,12 @@ footer h2{
 }
 
 .newsletter{
+    margin: auto;
     border: 3px solid var(--cor-primaria);
     height: 60px;
 	width: 596px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	border-radius: 15px;
 	padding-right: 5px;
 	background-color:#EDE1D1 ;
@@ -214,4 +218,33 @@ button {
 	border-radius: 15px;
 	background-color: var(--cor-primaria);
 	cursor: pointer;
+}
+
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 30px 60px;
+}
+
+.redes-sociais h3{
+    font-size: 42px ;
+    color:  var(--cor-primaria);
+    padding-bottom: 30px;
+}
+
+.redes-sociais li {
+    cursor: pointer;
+}
+
+.redes-sociais a{
+    padding: 0 10px;
+}
+
+footer p{
+    text-align: center;
+    color: var(--cor-primaria);
+    padding: 10px 0;
 }
