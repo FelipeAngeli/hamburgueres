@@ -1,0 +1,37 @@
+/*menu hamburguer*/
+
+.titulo-menu{
+    margin: 60px 0;
+}
+
+.categoria-hamburguer{
+    display: flex;
+    
+}
+
+.hamburguer-esquerdo{
+    justify-content:left;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.hamburguer-direito{
+    justify-content:left;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.menu-hamburguer{
+ 
+    text-align: center;
+    height: 120px;
+    width: 440px;
+}
+
+.menu-hamburguer p{
+    padding: 30px 0;
+    color: var(--cor-primaria);
+    font-size: 26px;
+    line-height: 30px;
+    
+}

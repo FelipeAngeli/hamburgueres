@@ -6,13 +6,14 @@ font-family: 'Roboto', sans-serif;
 :root{
 
     --cor-primaria: rgb(207, 117, 0);
+    --cor-secundaria:rgba(207, 117, 0, 0.5);
+
 }
 
 body{
- background-color: black;
- background-image: url(imagens/textura.png);
- background-repeat: no-repeat;
+ background: black  url(../imagens/textura.png) no-repeat;
  background-size: 100%;
+ background-position-y:100% ;
  font-family: 'Roboto', sans-serif; 
  width: 1200px;
  margin: 0 auto;
@@ -52,47 +53,51 @@ nav a{
     transform: translateZ(0);
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.2s;
-    transition-property: transform;
-    
+    transition-duration: 1s;
 }
 
-nav a:focus,
-nav a:hover,
-nav a:active {
+nav a:focus, a:hover, a:active {
     transform: scale(1.2);
     text-decoration:underline overline;   
 }
 
+h2{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 52px;
+    font-weight: 600;
+    color:var(--cor-primaria); 
+    
+}
 
+h3{
+    font-size:32px ;
+    color: var(--cor-primaria);
+    line-height: 40px;
+    padding-top: 25px;
+}
 
-/*baner inicio*/
+/*bann  er inicio*/
 .caixa-baner{
     display: flex;
-   
 }
 
 .hamburguer-baner{
     justify-content: flex-start;
     margin-top: 60px;
-    width: 60%;
-    
 }
 
 .texto-baner{
     justify-content: flex-end;
     margin-top: 175px;
     text-align: center;
-    width: 40%;
+    
 }
 
- h2{
-    
+.texto-baner h2{
     font-family: 'Roboto', sans-serif; 
     font-size: 72px;
     font-weight: 600;
     color:var(--cor-primaria); 
-    line-height: 80px;
     
 }
 
@@ -105,8 +110,18 @@ nav a:active {
     border: none;
     background-color: var(--cor-primaria); 
     border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-pedido:hover {
+    background-color: var(--cor-secundaria) ;
+    border: 2px solid var(--cor-primaria);
+    color: white;
+    transition: all 0.5s ease-in;
+    transition-delay: 0.05s;
     
 }
+
 
 /*cardapio*/
 
@@ -131,14 +146,12 @@ nav a:active {
 
 .caixa-bebida{
     display: flex;
-    margin: 60px 0;
+    margin: 60px 100px;
 }
 
 .pint-baner{
     justify-content: flex-start;
-    margin:0  100px;
     height: 450px ;
-
 }
 
 .texto-bebida{
@@ -147,12 +160,7 @@ nav a:active {
     margin: 60px 30px 0px 100px;
 }
 
-.texto-bebida h3, .texto-acompanhamento h3{
-    font-size:32px ;
-    color: var(--cor-primaria);
-    line-height: 40px;
-    padding-top: 25px;
-}
+
 
 
 /*acompanhamento*/
@@ -163,7 +171,7 @@ nav a:active {
 
 .texto-acompanhamento{
     justify-content: flex-start;
-    margin: 130px 100px 130px 30px;
+    margin: 100px 100px 100px 30px;
     padding-top: 80px;
 }
 
@@ -174,8 +182,6 @@ nav a:active {
 
 
 /*foother*/
-
-
 
 footer h2{
     text-align: center;
@@ -196,21 +202,18 @@ footer h2{
     
 }
 
-input {
+footer input {
 	border: 0;
 	flex: 1;
-    color: #000;
 	padding: 0 16px;
 	outline: none;
 	background-color: transparent;
     font-size: 26px;
-    
 }
 
 
 
-button {
-	
+footer button {
 	height: 55px;
 	width: 175px;
     font-size: 24px;
@@ -218,6 +221,14 @@ button {
 	border-radius: 15px;
 	background-color: var(--cor-primaria);
 	cursor: pointer;
+}
+
+footer button:hover {
+    background-color: var(--cor-secundaria) ;
+    border: 2px solid var(--cor-primaria);
+    color: black;
+    transition: all 0.5s ease-in;
+    transition-delay: 0.05s;
 }
 
 
@@ -235,12 +246,16 @@ button {
     padding-bottom: 30px;
 }
 
-.redes-sociais li {
+.redes-sociais li  {
+    display: inline-block;
+    padding: 0 10px;
     cursor: pointer;
+    transition: 1s;
 }
 
-.redes-sociais a{
-    padding: 0 10px;
+.redes-sociais li:hover, li:focus, li:active{
+        transform: scale(1.2);
+        
 }
 
 footer p{
