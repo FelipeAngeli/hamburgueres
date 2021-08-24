@@ -4,34 +4,73 @@
     margin: 60px 0;
 }
 
+
+/*Hamburguers*/
 .categoria-hamburguer{
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr auto  auto; /*isso e fantastico*/
+    grid-template-columns: 1fr 1fr;
     
 }
 
-.hamburguer-esquerdo{
-    justify-content:left;
-    flex-direction: column;
-    padding: 100px;
+.escolha-hamburguer{
+ margin: 60px 0 0 0;
+    
 }
 
-.hamburguer-direito{
-    justify-content:left;
-    flex-direction: column;
-    padding: 100px;
+.escolha-hamburguer img, .escolha-cerveja img, .escolha-petiscos img{
+    display:grid ;
+    /*margin-top: 60px;*/
+    margin-left: auto;
+    margin-right: auto;
+    
 }
-
-.menu-hamburguer{
- 
+.escolha-hamburguer h3, .escolha-petiscos h3{
     text-align: center;
-    height: 120px;
-    width: 440px;
+    padding-bottom: 30px;
 }
 
-.menu-hamburguer p{
-    padding: 30px 0;
+
+.escolha-hamburguer p, .escolha-cerveja p, .escolha-petiscos p{
     color: var(--cor-primaria);
     font-size: 26px;
     line-height: 30px;
+    text-align: center;
+    margin: 0 60px;
+    padding-top: 30px;
+}
+
+/*cervejas*/
+
+.categoria-cerveja{
+    display: grid;
+    grid-template-rows: 1fr auto; /*isso e fantastico*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.escolha-cerveja img{
+    margin-top: 60px;
+}
+
+.escolha-cerveja h3{
+    text-align: center;
+    padding: 30px 0 0 0;
     
 }
+
+
+
+/*petiscos*/
+
+.categoria-petiscos{
+    display: grid;
+    grid-template-rows: 1fr; /*isso e fantastico*/
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.escolha-petiscos img{
+    
+  
+}
+
