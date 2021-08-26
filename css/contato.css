@@ -1,0 +1,41 @@
+.formulario{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 90px 0;
+    
+}
+
+.formulario label{
+    font-size: 32px;
+    color:  var(--cor-primaria);
+    margin-top: 30px;
+    padding-bottom:10px ;
+}
+
+#mensagem, .input-padrao{
+    width: 480px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 3px solid #CF7500;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 10px;
+    color:#757575 ;
+    
+}
+
+#mensagem{
+    width: 580px;
+    height: 200px;
+}
+
+.foto-contato{
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    width: 544px;
+    height: 815px;
+    
+}
