@@ -1,0 +1,37 @@
+
+
+.imagem-principal{
+    display: grid;
+    grid-template-rows: 1fr; 
+    grid-template-columns: 1fr auto 1fr;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.foto-principal img{
+    max-width:955px;
+    max-height:600px;
+    width: auto;
+    height: auto;
+}
+
+
+.galeria-fotos{
+    display: grid;
+    grid-template-rows:  200px 200px 200px; 
+    grid-template-columns: 300px 300px 300px;
+    gap: 15px;
+    justify-content: center;
+    margin: 60px 0;
+
+}
+
+.galeria-fotos img{
+    width: 275px;
+    height: 184px;
+    margin: 15px;
+}
+
+.imagemtres{
+    border: solid 3px var(--cor-primaria) ;
+}
