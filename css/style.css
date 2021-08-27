@@ -13,7 +13,7 @@ font-family: 'Roboto', sans-serif;
 body{
     
  background: black  url(../imagens/textura.png) no-repeat;
- background-size: 100%;
+ background-size: 100% 100%;
  font-family: 'Roboto', sans-serif; 
  width: 1200px;
  margin: 0 auto;
@@ -52,13 +52,14 @@ nav a{
     vertical-align: middle;
     transform: translateZ(0);
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
     transition-duration: 1s;
+    
 }
 
 nav a:focus, a:hover, a:active {
     transform: scale(1.2);
-    text-decoration:underline overline;   
+    text-decoration:underline overline; 
+    text-decoration-thickness: 2px;
 }
 
 h2{

@@ -22,13 +22,25 @@
     border-radius: 15px;
     font-size: 18px;
     padding: 10px;
-    color:#757575 ;
+    ;
     
 }
+
+.input-padrao:hover{
+    color: var(--cor-primaria);
+    
+}
+
+
 
 #mensagem{
     width: 580px;
     height: 200px;
+    color:#757575 
+}
+
+#mensagem:hover{
+    color: var(--cor-primaria);
 }
 
 .foto-contato{

@@ -46,6 +46,7 @@
     display: grid;
     grid-template-rows: 1fr auto; /*isso e fantastico*/
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom:120px ;
 }
 
 .escolha-cerveja img{
@@ -66,11 +67,8 @@
     display: grid;
     grid-template-rows: 1fr; /*isso e fantastico*/
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 60px;
     
-}
-
-.escolha-petiscos img{
     
-  
 }
 
