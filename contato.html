@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/cardapio.css">
     <link rel="stylesheet" href="css/fotos.css">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/responsivo-style.css">
 
     <!--fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,20 +21,25 @@
     <title>Fotos</title>
 </head>
 <body>
-    <header>
+    <header id="header">
 
-        <div class="caixa-header">
-            <h1><img src="imagens/logo.svg"></h1>
+        
+        <h1><img src="imagens/logo.svg"></h1>
 
-            <nav>
-                <ul>
-                    <li><a  href="index.html">Início</a></li>
-                    <li><a  href="cardapio.html">Cardápio</a></li>
-                    <li><a  href="fotos.html">Fotos</a></li>
-                    <li><a  href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav id="nav">
+            
+            <button  aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+
+            <ul id="menu" role="menu">
+                <li><a  href="index.html">Início</a></li>
+                <li><a  href="cardapio.html">Cardápio</a></li>
+                <li><a  href="fotos.html">Fotos</a></li>
+                <li><a  href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    
     </header>
   
     <main >   
@@ -82,10 +88,10 @@
         </div>
     
 
-        <img src="imagens/mapa.png" alt="mapa localização">
+        <img class="mapa" src="imagens/mapa.png" alt="mapa localização">
 
         <p> 2021 Copyright © Felipe Angeli</p>
 </footer>
-     
+<script src="script.js"></script>
 </body>
 </html>

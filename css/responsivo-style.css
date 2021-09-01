@@ -1,0 +1,258 @@
+@media (max-width: 900px){
+
+    #header img{
+        margin-left: 20px;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #1b1b1bb9;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+      }
+      #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y:auto;
+        
+      }
+      #menu  a {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        
+        padding: 1rem;
+        margin: 0 1rem;
+        
+      }
+
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        color: var(--cor-primaria);
+        border-top: 3px solid;
+        width: 30px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+
+      /*h2 - h3*/
+
+      h2{
+        font-size: 42px; 
+    }
+    
+    h3{
+        font-size:22px ;
+        line-height: 30px;
+        padding-top: 25px;
+    }
+
+      /*banner*/
+
+      .hamburguer-baner{
+    
+        width: 50%;
+    }
+
+    .texto-baner{
+        margin-top: 120px;
+    }
+
+    .texto-baner h2{
+        font-size: 52px;
+    }
+
+    
+    /*cardapio*/
+    .mosaico-hamburguer img{
+    width: 45%;
+        
+    }
+
+    /*bebidas*/
+
+.pint-baner{
+    height: 350px ;
+}
+
+.texto-bebida{
+    margin:  7% 3%;
+}
+
+
+
+
+/*acompanhamento*/
+
+.texto-acompanhamento{
+    margin: 10%;
+   
+}
+
+.fritas-banner{
+    height: 450px;
+    margin-right: 30px;
+}
+
+
+/*foother*/
+
+
+.mapa{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+}
+
+    
+    
+      
+@media screen and  (max-width: 700px) {
+    .caixa-banner{
+        display: grid;  
+        grid-template-columns: (1fr);
+    }
+
+    .hamburguer-baner {
+        width: 250px;
+        height: 250px;
+       
+    }
+
+    .texto-baner{
+
+    }
+
+    /*cardapio*/
+    .caixa-cardapio{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 60 auto;
+    }
+    .mosaico-hamburguer{
+        /*display: grid;
+        grid-template-rows:  auto auto ; 
+        grid-template-columns: auto auto;
+        align-items: center;
+        z-index: 1;*/
+    }
+   .mosaico-hamburguer img{
+    max-width: 100%;
+    grid-row: 1;
+    margin: 0 7px;
+   }
+
+   .texto-cardapio{
+    grid-row: 2;
+    margin: 30px;
+    
+}
+
+/*bebidas*/
+
+.caixa-bebida{
+    display: grid;
+    margin: 60px 30px;
+}
+
+.pint-baner{
+    margin: 30px auto;
+    height: 250px;
+}
+
+.texto-bebida{
+   text-align: center;
+}
+
+
+/*acompanhamento*/
+
+.caixa-acompanhamento{
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.fritas-banner{
+    grid-row: 1;
+    height: 500px;
+}
+  
+
+.texto-acompanhamento{
+    padding: 0;
+    grid-row: 2;
+    text-align: center;
+}
+
+/*foother*/
+
+.newsletter{
+	width: 360px; 
+    margin-top: 30px;
+}
+
+footer input {
+    font-size: 22px;
+    padding:0 0 0 10px;
+}
+
+
+
+footer button {
+	height: 55px;
+	width: 175px;
+    font-size: 22px;
+	border-radius: 10px;
+}
+
+.redes-sociais h3{
+   text-align: center;
+}
+
+}
+
+
+
+

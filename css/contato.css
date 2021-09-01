@@ -51,3 +51,17 @@
     height: 815px;
     
 }
+
+@media (max-width: 900px){
+    .formulario{
+        margin: 90px 30px;
+        
+    }
+
+    .mapa{
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}

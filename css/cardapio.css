@@ -72,3 +72,38 @@
     
 }
 
+@media (max-width: 900px){
+    .categoria-cerveja{
+       
+        grid-template-rows: 1fr auto 1fr; /*isso e fantastico*/
+        grid-template-columns: 1fr 1fr 1fr;
+       
+    }
+
+    .categoria-petiscos{
+        display: flex;
+        justify-content: center;        
+        
+    }
+
+    .escolha-petiscos img{
+        width: 200px;
+        height: 200px;
+        object-fit: scale-down;
+        
+    }
+
+    .escolha-petiscos h3{
+         font-size: 28px; 
+
+     }
+
+    .escolha-petiscos p{
+        font-size: 22px; 
+        margin: 0 15px;
+    }
+
+}
+
+
+

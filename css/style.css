@@ -15,52 +15,60 @@ body{
  background: black  url(../imagens/textura.png) no-repeat;
  background-size: 100% 100%;
  font-family: 'Roboto', sans-serif; 
- width: 1200px;
- margin: 0 auto;
+ max-width: 1200px;
+ min-width: 320px;
+ margin: auto;
 }
+
+
 
 
 
 /* posicionamento do menu*/
-header{
+#header{
     padding: 20px 0;
     height: 45px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.caixa-header{
-    position: relative;
-
-}
-
-nav{
-    position: absolute;
-    top: 6px;
+#menu{
+    
+    display: flex;
+    top: 30px;
     right: 0;
 }
 
-nav li{
+#menu li{
     display: inline;
     margin-left: 20px;
    
 }
 
-nav a{
+#menu a{
     text-decoration: none;
     color: var(--cor-primaria);
     font-size: 20px;
-    display: inline-block;
-    vertical-align: middle;
+    display:block;
+    
     transform: translateZ(0);
     backface-visibility: hidden;
     transition-duration: 1s;
     
 }
 
-nav a:focus, a:hover, a:active {
+#menu  a:hover,a:focus, a:active {
     transform: scale(1.2);
     text-decoration:underline overline; 
     text-decoration-thickness: 2px;
 }
+
+#btn-mobile {
+    display: none;
+}
+
 
 h2{
     font-family: 'Roboto', sans-serif; 
@@ -77,24 +85,39 @@ h3{
     padding-top: 25px;
 }
 
-/*bann  er inicio*/
+
+
+/*banner inicio*/
 .caixa-baner{
-    display: flex;
+    /*display: flex;*/
+    display: grid;
+    grid-template-areas: "l r";
+    grid-template-columns: 1fr 1fr;
 }
 
-.hamburguer-baner{
-    justify-content: flex-start;
+.hamburguer-baner img{
+    /*flex-flow: row nowrap;
+    justify-content: flex-start;*/
+
+    grid-area: "l";
+    height: 80%;
+    /*width: 60vw;
+    height: 60vh;*/
+    
     margin-top: 60px;
 }
 
 .texto-baner{
-    justify-content: flex-end;
+    grid-area: "r";
+    /*flex-flow: row nowrap;
+    justify-content: flex-end;*/
     margin-top: 175px;
     text-align: center;
     
 }
 
 .texto-baner h2{
+    grid-area: "r";
     font-family: 'Roboto', sans-serif; 
     font-size: 72px;
     font-weight: 600;
@@ -133,12 +156,14 @@ h3{
 
 .texto-cardapio{
     justify-content: flex-start;
-    margin:  100px;
+    margin:  100px 60px ;
     text-align: center;
     
 }
 
 .mosaico-hamburguer{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     
 }
@@ -227,7 +252,7 @@ footer button {
 footer button:hover {
     background-color: var(--cor-secundaria) ;
     border: 2px solid var(--cor-primaria);
-    color: black;
+    color: rgb(0, 0, 0);
     transition: all 0.5s ease-in;
     transition-delay: 0.05s;
 }
@@ -264,3 +289,5 @@ footer p{
     color: var(--cor-primaria);
     padding: 10px 0;
 }
+
+

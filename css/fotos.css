@@ -35,3 +35,26 @@
 .imagemtres{
     border: solid 3px var(--cor-primaria) ;
 }
+
+@media (max-width: 900px){
+    .foto-principal img{
+        max-width:755px;
+        max-height:400px;
+    }
+
+    .galeria-fotos{
+        grid-template-rows:  150px 150px 150px; 
+        grid-template-columns: 250px 250px 250px;
+        margin: 60px 0;
+    
+    }
+
+    .galeria-fotos img{
+        width: 225px;
+        height: 134px;
+        margin: 15px;
+    }
+    
+
+
+}
