@@ -91,11 +91,11 @@ h3{
 .caixa-baner{
     /*display: flex;*/
     display: grid;
-    grid-template-areas: "l r";
+   /* grid-template-areas: "l r";*/
     grid-template-columns: 1fr 1fr;
 }
 
-.hamburguer-baner img{
+.hamburguer-baner {
     /*flex-flow: row nowrap;
     justify-content: flex-start;*/
 

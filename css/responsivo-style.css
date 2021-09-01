@@ -148,17 +148,20 @@
 @media screen and  (max-width: 700px) {
     .caixa-banner{
         display: grid;  
-        grid-template-columns: (1fr);
+   
     }
 
-    .hamburguer-baner {
-        width: 250px;
-        height: 250px;
+    .hamburguer-baner{
+        grid-row: 1;
        
+        width: 90%;
+        margin: 30px auto;
     }
 
-    .texto-baner{
-
+    .texto-baner {
+        
+        grid-row: 2;
+        margin: 0 auto;
     }
 
     /*cardapio*/
