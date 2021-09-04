@@ -58,6 +58,11 @@
         
     }
 
+    .foto-contato{
+        opacity: 0.3;
+    }
+
+
     .mapa{
         display: flex;
         margin: 0 auto;
@@ -65,3 +70,16 @@
     }
 
 }
+
+@media (max-width: 700px){
+    .foto-contato{
+        display: none;
+    }
+
+    #mensagem, .input-padrao{
+
+        width: 100%;
+    }
+
+}
+

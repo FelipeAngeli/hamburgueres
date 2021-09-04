@@ -72,6 +72,12 @@
     
 }
 
+
+
+.escolha-petiscos-cebola{
+    padding: 60px;
+}
+
 @media (max-width: 900px){
     .categoria-cerveja{
        
@@ -104,6 +110,72 @@
     }
 
 }
+
+
+@media screen and  (max-width: 700px) {
+
+    .titulo-menu{
+        margin: 60px 30px;
+    }
+
+    .categoria-hamburguer{
+        grid-template-rows: 1fr auto auto auto auto 1fr; /*isso e fantastico*/
+        grid-template-columns: 1fr;
+    }
+
+    .categoria-hamburguer h3{
+        font-size:1.6em ;
+    }
+
+    .categoria-hamburguer p{
+        padding-top: 0;
+        font-size: 1.3em;
+    }
+
+    .categoria-cerveja{
+        grid-template-rows:  auto; /*isso e fantastico*/
+        grid-template-columns: 1fr  ;
+        margin-bottom:120px ;
+    }
+
+    .escolha-cerveja img{
+        margin: 30px auto;
+    }
+
+    .escolha-cerveja h3{
+        padding: 0;
+        font-size: 1.6em;
+        
+    }
+
+    .escolha-cerveja p{
+        font-size: 1.3em;
+        padding-bottom: 1.5em ;
+    }
+
+    .categoria-petiscos{
+        display: grid;
+        grid-template-rows:  auto ;
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+        
+        
+    }
+
+    .escolha-petiscos{
+        margin: 30px auto;
+    }
+
+    .escolha-petiscos-polenta{
+        padding: 0;
+    }
+
+    .escolha-petiscos-cebola{
+        padding: 0;
+    }
+    
+}
+
 
 
 
