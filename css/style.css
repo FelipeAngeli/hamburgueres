@@ -111,7 +111,7 @@ h3{
     grid-area: "r";
     /*flex-flow: row nowrap;
     justify-content: flex-end;*/
-    margin-top: 175px;
+    margin: 11em 0 0 6.5em;
     text-align: center;
     
 }
@@ -119,7 +119,7 @@ h3{
 .texto-baner h2{
     grid-area: "r";
     font-family: 'Roboto', sans-serif; 
-    font-size: 72px;
+    font-size: 4.3em;
     font-weight: 600;
     color:var(--cor-primaria); 
     
@@ -129,7 +129,7 @@ h3{
     margin-top: 60px ;
     width: 250px;
     height: 55px;
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: 'Roboto', sans-serif; 
     border: none;
     background-color: var(--cor-primaria); 
@@ -159,7 +159,7 @@ h3{
 .texto-cardapio{
     grid-column: 1;
     grid-row: 1;
-    margin:  100px 60px ;
+    margin:  250px 60px ;
     text-align: center;
     
 }
@@ -234,7 +234,7 @@ h3{
 
 footer h2{
     text-align: center;
-    font-size: 42px;
+    font-size: 2.62em;
     margin-bottom: 15px;
 }
 
@@ -265,7 +265,7 @@ footer input {
 footer button {
 	height: 55px;
 	width: 175px;
-    font-size: 24px;
+    font-size: 1.625em;
     border: 0;
 	border-radius: 15px;
 	background-color: var(--cor-primaria);
